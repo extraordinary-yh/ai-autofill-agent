@@ -1,0 +1,34 @@
+{
+  "name": "ai-form-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node ./src/_internal/run.ts",
+    "start:api": "ts-node ./src/server.ts",
+    "start:scheduler": "ts-node ./src/scheduler.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Autonomous AI agent for intelligent web form completion using LLM and browser automation",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.14.0",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-fetch": "^2.6.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.2.10",
+    "ai": "^4.3.2",
+    "dotenv-defaults": "^5.0.2",
+    "express": "^5.1.0",
+    "global-agent": "^3.0.0",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "playwright": "^1.51.1",
+    "socks-proxy-agent": "^8.0.5",
+    "undici": "^7.10.0"
+  }
+}
